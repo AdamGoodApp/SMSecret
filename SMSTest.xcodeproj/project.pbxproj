@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6613998D1BA8D90300F968F5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6613998C1BA8D90300F968F5 /* Alamofire.framework */; };
+		661399911BA8D9A900F968F5 /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 661399901BA8D9A900F968F5 /* Alamofire.framework.dSYM */; };
+		6628E4D61BAA18E50038E310 /* Sms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6628E4D51BAA18E50038E310 /* Sms.swift */; settings = {ASSET_TAGS = (); }; };
+		669416CF1BA8D70F0006377D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669416CE1BA8D70F0006377D /* AppDelegate.swift */; };
+		669416D11BA8D70F0006377D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669416D01BA8D70F0006377D /* ViewController.swift */; };
+		669416D41BA8D70F0006377D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669416D21BA8D70F0006377D /* Main.storyboard */; };
+		669416D61BA8D70F0006377D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669416D51BA8D70F0006377D /* Assets.xcassets */; };
+		669416D91BA8D70F0006377D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669416D71BA8D70F0006377D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6613998F1BA8D98D00F968F5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				661399911BA8D9A900F968F5 /* Alamofire.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6613998C1BA8D90300F968F5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		661399901BA8D9A900F968F5 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		6628E4D51BAA18E50038E310 /* Sms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sms.swift; sourceTree = "<group>"; };
+		669416CB1BA8D70F0006377D /* SMSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		669416CE1BA8D70F0006377D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		669416D01BA8D70F0006377D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		669416D31BA8D70F0006377D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		669416D51BA8D70F0006377D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		669416D81BA8D70F0006377D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		669416DA1BA8D70F0006377D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		669416C81BA8D70F0006377D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6613998D1BA8D90300F968F5 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		669416C21BA8D70F0006377D = {
+			isa = PBXGroup;
+			children = (
+				661399901BA8D9A900F968F5 /* Alamofire.framework.dSYM */,
+				6613998C1BA8D90300F968F5 /* Alamofire.framework */,
+				669416CD1BA8D70F0006377D /* SMSTest */,
+				669416CC1BA8D70F0006377D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		669416CC1BA8D70F0006377D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				669416CB1BA8D70F0006377D /* SMSTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		669416CD1BA8D70F0006377D /* SMSTest */ = {
+			isa = PBXGroup;
+			children = (
+				669416CE1BA8D70F0006377D /* AppDelegate.swift */,
+				669416D01BA8D70F0006377D /* ViewController.swift */,
+				6628E4D51BAA18E50038E310 /* Sms.swift */,
+				669416D21BA8D70F0006377D /* Main.storyboard */,
+				669416D51BA8D70F0006377D /* Assets.xcassets */,
+				669416D71BA8D70F0006377D /* LaunchScreen.storyboard */,
+				669416DA1BA8D70F0006377D /* Info.plist */,
+			);
+			path = SMSTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		669416CA1BA8D70F0006377D /* SMSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 669416DD1BA8D70F0006377D /* Build configuration list for PBXNativeTarget "SMSTest" */;
+			buildPhases = (
+				669416C71BA8D70F0006377D /* Sources */,
+				669416C81BA8D70F0006377D /* Frameworks */,
+				669416C91BA8D70F0006377D /* Resources */,
+				6613998E1BA8D91B00F968F5 /* ShellScript */,
+				6613998F1BA8D98D00F968F5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMSTest;
+			productName = SMSTest;
+			productReference = 669416CB1BA8D70F0006377D /* SMSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		669416C31BA8D70F0006377D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Adamgoodapp;
+				TargetAttributes = {
+					669416CA1BA8D70F0006377D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = V7DQ232ZW4;
+					};
+				};
+			};
+			buildConfigurationList = 669416C61BA8D70F0006377D /* Build configuration list for PBXProject "SMSTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 669416C21BA8D70F0006377D;
+			productRefGroup = 669416CC1BA8D70F0006377D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				669416CA1BA8D70F0006377D /* SMSTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		669416C91BA8D70F0006377D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669416D91BA8D70F0006377D /* LaunchScreen.storyboard in Resources */,
+				669416D61BA8D70F0006377D /* Assets.xcassets in Resources */,
+				669416D41BA8D70F0006377D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6613998E1BA8D91B00F968F5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		669416C71BA8D70F0006377D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669416D11BA8D70F0006377D /* ViewController.swift in Sources */,
+				669416CF1BA8D70F0006377D /* AppDelegate.swift in Sources */,
+				6628E4D61BAA18E50038E310 /* Sms.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		669416D21BA8D70F0006377D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				669416D31BA8D70F0006377D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		669416D71BA8D70F0006377D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				669416D81BA8D70F0006377D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		669416DB1BA8D70F0006377D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		669416DC1BA8D70F0006377D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		669416DE1BA8D70F0006377D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SMSTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamgoodapp.SMSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		669416DF1BA8D70F0006377D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SMSTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamgoodapp.SMSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		669416C61BA8D70F0006377D /* Build configuration list for PBXProject "SMSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				669416DB1BA8D70F0006377D /* Debug */,
+				669416DC1BA8D70F0006377D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		669416DD1BA8D70F0006377D /* Build configuration list for PBXNativeTarget "SMSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				669416DE1BA8D70F0006377D /* Debug */,
+				669416DF1BA8D70F0006377D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 669416C31BA8D70F0006377D /* Project object */;
+}
