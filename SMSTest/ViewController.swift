@@ -15,6 +15,7 @@ class ViewController: UIViewController, ABPeoplePickerNavigationControllerDelega
     
     @IBOutlet weak var messageField: UITextView!
     @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     let authorizationStatus = ABAddressBookGetAuthorizationStatus()
     
@@ -26,6 +27,10 @@ class ViewController: UIViewController, ABPeoplePickerNavigationControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        view.addGestureRecognizer(tap)
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,6 +51,14 @@ class ViewController: UIViewController, ABPeoplePickerNavigationControllerDelega
             promptForAddressBookRequestAccess()
         }
     }
+    
+    @IBAction func sendSMSButton(sender: AnyObject) {
+        SMS().sendSMS(numberLabel.text!, message: messageField.text!)
+        messageField.text = ""
+    }
+    
+    
+//    ----- Address book -----
     
     func promptForAddressBookRequestAccess() {
         ABAddressBookRequestAccessWithCompletion(addressBookRef) {
@@ -82,7 +95,7 @@ class ViewController: UIViewController, ABPeoplePickerNavigationControllerDelega
     func displayContacts() {
         let picker = ABPeoplePickerNavigationController()
         picker.peoplePickerDelegate = self
-        picker.displayedProperties = [NSNumber(int: kABPersonPhoneProperty)]
+        picker.displayedProperties = [NSNumber(int: kABPersonPhoneProperty), NSNumber(int: kABPersonFirstNameProperty)]
         presentViewController(picker, animated: true, completion: nil)
     }
     
@@ -92,11 +105,25 @@ class ViewController: UIViewController, ABPeoplePickerNavigationControllerDelega
         let number = ABMultiValueCopyValueAtIndex(multiValue, index).takeRetainedValue() as! String
         numberLabel.text = number
     }
-
     
-    @IBAction func sendSMSButton(sender: AnyObject) {
-        SMS().sendSMS(numberLabel.text!, message: messageField.text!)
-        messageField.text = ""
+    
+//    ---- Keyboard ----
+    
+    func keyboardWillShow(sender: NSNotification) {
+        if let keyboardSize = (sender.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue(){
+            self.view.frame.origin.y -= keyboardSize.height
+        }
+    }
+    
+    func keyboardWillHide(sender: NSNotification) {
+        if let keyboardSize = (sender.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+            self.view.frame.origin.y += keyboardSize.height
+        }
+    }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
 }
